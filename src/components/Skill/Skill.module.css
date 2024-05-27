@@ -1,0 +1,20 @@
+/* Skill.module.css */
+
+.skill {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 1px solid white;
+  padding: 9px;
+}
+
+.skill img {
+  width: 100%; /* Ajustar el tamaño de la imagen para que no se corte */
+  height: 100%; /* Asegurarse de que la imagen se contenga completamente dentro del contenedor */
+  object-fit: contain; /* Mantener la proporción de la imagen */
+}

@@ -1,0 +1,35 @@
+/* ProjectCard.module.css */
+
+.containerProjectCard {
+    padding: 20px;
+  }
+  
+  .projectCard {
+    width: 325px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* Asegúrate de que el contenido no se desborde */
+  }
+  
+  .projectCardContent {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .projectCard h4,
+  .projectCard p {
+    margin: 0;
+  }
+  
