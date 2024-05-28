@@ -85,9 +85,14 @@
 }
 
 @media (max-width: 882px) {
+  .heroContainer{
+    overflow-x: hidden !important;
+  }
+
   .heroFlexbox {
     flex-direction: column;
     align-items: center;
+    padding-left: 20px;
   }
 
   .description,
@@ -99,12 +104,15 @@
 
   .description h1 {
     font-size: 2rem !important;
-    justify-content: center !important;
+    text-align: left;
   }
 
   .description span {
     font-size: 1.5rem !important;
     padding: 5px 10px !important;
+  }
+  .titleProjects h1{
+    font-size: 3.5rem;
   }
 }
 /**/

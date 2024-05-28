@@ -30,7 +30,7 @@ const Header = () => {
       {isMobile ? (
         <div className={styles.hamburgerMenu}>
           <div className={styles.logoMobile}>
-            <img src={Logo} width={50} alt="Logo" />
+            <img src={Logo} width={90} alt="Logo" />
           </div>
           <div className={`${styles.icon} ${isOpen ? styles.iconOpen : ''}`} onClick={toggleMenu}>
             {isOpen ? <FaTimes /> : <FaBars />}
