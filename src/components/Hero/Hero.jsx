@@ -15,29 +15,32 @@ const Hero = () => {
 
   textAlign: 'center' 
 }} >
-        <span style={{ 
-    display: 'block', 
-    fontSize: '2rem',
-    color: '#4497fb', 
-    fontWeight: 'bold',
-    
-   
-  }}>Johan Riascos</span>
-        <h1 style={{ 
-    fontSize: '3rem', 
-    color: '#333', 
-    margin: '10px 0' 
-  }}>Desarrollador Full Stack</h1>
-        <p style={{ 
-fontSize: '1.1rem',
-    color: '#666', 
-    lineHeight: '1.5',
-    textAlign: 'justify' 
-  }}>Tecnólogo en análisis y desarrollo de software. Autodidacta, proactivo; me motiva el desarrollo personal, por lo que he desarrollado la capacidad de concentrarme y programar durante largas horas. Se me facilita expresarme, comunicando mis ideas de manera clara. Tengo experiencia en la implementación de soluciones web completas, desde el diseño hasta la integración de APIs, bases de datos e implementación de medidas de seguridad.
+<span style={{ 
+  fontSize: '2rem', 
+  color: '#fff', 
+  fontWeight: 'bold',
+  margin: '5px 0',
+  backgroundColor: '#333',
+  padding: '8px 20px',
+  borderRadius: '30px',
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+  display: 'inline-block'
+}}>Johan Riascos</span>
 
+<h1 style={{ 
+  fontSize: '3.5rem', 
+  color: '#000', 
+  margin: '5px 0', 
+  fontWeight: 'bold',
+  textShadow: '2px 2px #bbb'
+}}>Desarrollador Full Stack</h1>
+<p style={{ 
+  fontSize: '1.1rem',
+  color: '#666', 
+  lineHeight: '1.5',
+  textAlign: 'justify' 
+}}>Tecnólogo en análisis y desarrollo de software. Autodidacta, proactivo; me motiva el desarrollo personal, por lo que he desarrollado la capacidad de concentrarme y programar durante largas horas. Se me facilita expresarme, comunicando mis ideas de manera clara. Tengo experiencia en la implementación de soluciones web completas, desde el diseño hasta la integración de APIs, bases de datos e implementación de medidas de seguridad.</p>
 
-
-  </p>
       </div>
 
       <div className={styles.skills}>
