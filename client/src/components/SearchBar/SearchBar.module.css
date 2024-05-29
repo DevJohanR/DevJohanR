@@ -1,0 +1,71 @@
+/* frontend/src/components/SearchBar/SearchBar.module.css */
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.searchBar {
+  width: 70%;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.searchBar:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.searchButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: -40px;
+  font-size: 20px;
+  color: #007BFF;
+}
+
+.searchResults {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 10;
+  display: none;
+}
+
+.searchResults.visible {
+  display: block;
+}
+
+.searchResults.hidden {
+  display: none;
+}
+
+.searchResultItem {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.searchResultItem:hover {
+  background-color: #f0f0f0;
+}
+
+.highlight {
+  background-color: #007BFF;
+  color: white;
+}
