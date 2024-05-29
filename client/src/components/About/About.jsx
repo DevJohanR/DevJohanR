@@ -39,13 +39,20 @@ const About = () => {
 
   return (
     <div className={styles.aboutContainer}>
-      <h1 className={styles.aboutTitle}>About</h1>
+      <h1 className={styles.aboutTitle}>Explora Mis Proyectos Tecnológicos</h1>
       <SearchBar setSearchTerm={setSearchTerm} />
       <ProjectsSearch searchTerm={searchTerm} />
       <div className={styles.codeSection}>
         <div className={styles.textContainer}>
-          <h2 className={styles.codeTitle}>Código del Backend: Node.js y SQL</h2>
-          <p className={styles.codeDescription}>Dejo este fragmento de código a continuación para mostrar cómo implementé la lógica de búsqueda en el backend de mi aplicación utilizando Node.js y SQL. Esta ruta maneja una consulta SQL que busca proyectos, clientes y tecnologías relacionadas, demostrando mis habilidades para trabajar con bases de datos y desarrollar APIs eficientes.</p>
+      
+          <h3 className={styles.codeSubtitle}>Consumo Eficiente de API con Node.js y MySQL</h3>
+          <p className={styles.codeDescription}>
+          En mi trabajo actual en Activos Digitales, utilizamos un enfoque basado en Node.js y MySQL para manejar y filtrar datos de manera eficiente, este fragmento de codigo corresponde a la logica que permite el filtrado de mis componentes en la seccion anterior.  el siguiente fragmento de código, que muestra cómo la implementacion realizada 
+          </p>
+          <div className={styles.ctaButtons}>
+            <button className={styles.ctaButton}>Ver Más Proyectos</button>
+            <button className={styles.ctaButton}>Contactarme</button>
+          </div>
         </div>
         <div className={styles.codeContainerWrapper}>
           <CodeBlock language="javascript" codeString={backendCode} />

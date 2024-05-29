@@ -1,0 +1,128 @@
+.contactPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #f0f4f8;  /* Updated background color */
+  color: #1a1a1a;  /* Updated text color to ensure readability */
+  font-family: 'Poppins', sans-serif;
+  margin: 30px;
+}
+
+.titleSmall {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.titleLarge {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.infoSection, .formSection {
+  width: 45%;
+}
+
+.separator {
+  width: 1px;
+  background-color: #1a1a1a;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;  /* Updated background color for better contrast */
+  border-radius: 5px;
+  color: #1a1a1a;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #4497fb;
+}
+
+.link {
+  color: #4497fb;  /* Updated link color for better visibility */
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.formInput, .formTextarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;  /* Updated background color for better contrast */
+  color: #1a1a1a;
+}
+
+.formInput::placeholder, .formTextarea::placeholder {
+  color: #aaa;
+}
+
+.formInput:focus, .formTextarea:focus {
+  outline: none;
+  border: 1px solid #4497fb;
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4497fb;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #3679d6;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoSection, .formSection {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .separator {
+    display: none;
+  }
+}

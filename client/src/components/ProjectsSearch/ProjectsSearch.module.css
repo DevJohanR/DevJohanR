@@ -1,4 +1,5 @@
 /* frontend/src/components/ProjectsSearch/ProjectsSearch.module.css */
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -12,8 +13,8 @@
   margin: 10px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -22,7 +23,40 @@
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
 }
 
+.project h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #4497fb, #034595);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #555;
+  margin: 5px 0;
+}
+
 .highlight {
   background-color: #007BFF;
   color: white;
+  font-weight: 600;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .project {
+    flex: 1 1 100%;
+  }
+
+  .project h3 {
+    font-size: 1.5rem;
+  }
+
+  .project p {
+    font-size: 0.875rem;
+  }
 }

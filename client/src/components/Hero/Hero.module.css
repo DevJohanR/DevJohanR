@@ -3,6 +3,7 @@
 .heroContainer {
   padding: 30px;
   text-align: left;
+  font-family: 'Poppins', sans-serif;
 }
 
 .description {
@@ -10,37 +11,33 @@
   flex-direction: column;
   align-items: flex-start;
   max-width: 50%;
-  padding-left: 20px;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
 }
 
 .heroName {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: bold;
-  margin: 5px 0;
-  background-color: #333;
-  padding: 8px 20px;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 0;
+  color: #000;
   display: inline-block;
 }
 
 .heroTitle {
-  font-size: 3.5rem;
-  color: #000;
-  margin: 5px 0;
-  font-weight: bold;
-  text-shadow: 2px 2px #bbb;
-  word-wrap: break-word;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #4497fb, #034595);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .heroDescription {
-  font-size: 1.1rem;
-  color: #666;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.5;
+  color: #555;
   text-align: justify;
 }
 
@@ -63,12 +60,11 @@
 }
 
 .titleProjects h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin: 10px 0;
   color: #000;
-  font-weight: bold;
-  text-shadow: 2px 2px #bbb;
-  margin: 20px 0;
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .heroFlexbox {
@@ -85,7 +81,7 @@
 }
 
 @media (max-width: 882px) {
-  .heroContainer{
+  .heroContainer {
     overflow-x: hidden !important;
   }
 
@@ -102,17 +98,22 @@
     text-align: center;
   }
 
-  .description h1 {
-    font-size: 2rem !important;
-    text-align: left;
+  .description span {
+    font-size: 2.5rem;
   }
 
-  .description span {
-    font-size: 1.5rem !important;
-    padding: 5px 10px !important;
+  .heroTitle {
+    font-size: 1.5rem;
+    margin: 5px 0;
   }
-  .titleProjects h1{
-    font-size: 3.5rem;
+
+  .heroDescription {
+    font-size: 1rem;
+  }
+
+  .titleProjects h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
   }
 }
-/**/

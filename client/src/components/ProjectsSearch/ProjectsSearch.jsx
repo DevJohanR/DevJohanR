@@ -9,7 +9,7 @@ const ProjectsSearch = ({ searchTerm }) => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/projects', {
+        const response = await axios.get('https://portafoliojohanriascos.onrender.com/api/projects', {
           params: { search: searchTerm }
         });
         setProjects(response.data);
