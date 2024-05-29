@@ -1,0 +1,70 @@
+.codeContainer {
+    margin: 0;
+  font-size: 14px;
+ 
+    border-radius: 10px;
+    background: #282a36; /* Fondo oscuro */
+    color: #f8f8f2;
+    overflow-x: auto;
+  }
+  
+  pre {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .hljs {
+    font-family: 'Fira Code', monospace !important;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #f8f8f2;
+  }
+  
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal,
+  .hljs-section,
+  .hljs-link {
+    color: #00bfff; /* Azul brillante */
+  }
+  
+  .hljs-function .hljs-keyword {
+    color: #00bfff; /* Azul brillante */
+  }
+  
+  .hljs-subst {
+    color: #f8f8f2;
+  }
+  
+  .hljs-string,
+  .hljs-title,
+  .hljs-name,
+  .hljs-type,
+  .hljs-attribute,
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-addition,
+  .hljs-variable,
+  .hljs-template-tag,
+  .hljs-template-variable {
+    color: #00f; /* Azul claro grueso */
+  }
+  
+  .hljs-comment,
+  .hljs-quote,
+  .hljs-deletion,
+  .hljs-meta {
+    color: #6272a4;
+  }
+  
+  .hljs-doctag,
+  .hljs-keyword {
+    font-weight: bold;
+  }
+  
+  .hljs-doctag,
+  .hljs-formula {
+    background: #44475a;
+  }
+  
