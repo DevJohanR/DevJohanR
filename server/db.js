@@ -1,13 +1,13 @@
-// backend/db.js
 const mysql = require('mysql2');
+require('dotenv').config();
 
 const pool = mysql.createPool({
-  host: 'srv1180.hstgr.io',
-  user: 'u491711087_userjohan',
-  password: '7=q2m|S?1o',
-  database: 'u491711087_basejohan',
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
   waitForConnections: true,
-  connectionLimit: 10,
+  connectionLimit: process.env.DB_CONNECTION_LIMIT,
   queueLimit: 0
 });
 
