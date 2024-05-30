@@ -1,6 +1,6 @@
 .footer {
-    background-color: #f0f4f8; /* Updated background color */
-    color: #333; /* Updated text color */
+    background-color: #333; /* Updated background color */
+    color: white; /* Updated text color */
     padding: 40px 20px;
     font-family: 'Poppins', sans-serif; /* Updated font family */
     text-align: center;
@@ -34,7 +34,7 @@
     margin-bottom: 8px;
     font-size: 1rem; /* Consistent font size with AboutMe */
     font-weight: 400; /* Consistent font weight with AboutMe */
-    color: #555; /* Consistent color with AboutMe */
+    color: #cec5c5; /* Consistent color with AboutMe */
   }
   
   .new {
@@ -86,7 +86,7 @@
     margin-top: 10px;
     font-size: 0.9rem; /* Slightly smaller font size for copyright text */
     font-weight: 300; /* Lighter font weight */
-    color: #777; /* Slightly lighter color for subtlety */
+    color: #dbd8d8; /* Slightly lighter color for subtlety */
   }
   
   @media (min-width: 768px) {

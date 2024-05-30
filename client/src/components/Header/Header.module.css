@@ -1,17 +1,20 @@
 /* Header.module.css */
 
 .headerContainer {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #333;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-  }
-  
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #333;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Aseguramos que el header esté por encima del contenido */
+}
+
   .hamburgerMenu {
     position: relative;
     z-index: 1000; /* Para asegurarse de que el menú siempre esté en la parte superior */

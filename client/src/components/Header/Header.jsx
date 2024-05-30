@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import styles from './Header.module.css';
 import Logo from "../../assets/logoJohan.png";
@@ -37,9 +37,8 @@ const Header = () => {
           </div>
           <div className={`${styles.menu} ${isOpen ? styles.menuOpen : ''}`}>
             <Link to="/" onClick={toggleMenu}>Home</Link>
-            <Link to="/about" onClick={toggleMenu}>About</Link>
-            <Link to="/services" onClick={toggleMenu}>Services</Link>
-            <Link to="/contact" onClick={toggleMenu}>Contact</Link>
+            <Link to="tecnologias" onClick={toggleMenu}>Tecnologías</Link>
+            <Link to="contacto" onClick={toggleMenu}>Contacto</Link>
             <div className={styles.socialIcons}>
               <a href="https://github.com/tu-perfil" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
@@ -47,6 +46,7 @@ const Header = () => {
               <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
+              
             </div>
           </div>
         </div>
@@ -56,10 +56,10 @@ const Header = () => {
             <img src={Logo} width={100} alt="Logo" />
           </div>
           <div className={styles.links}>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/">Inicio</Link>
+            <Link to="tecnologias" smooth={true} duration={500}>Tecnologías</Link>
+            <Link to="contacto" smooth={true} duration={500}>
+Contacto</Link>
             <div className={styles.socialIcons}>
               <a href="https://github.com/tu-perfil" target="_blank" rel="noopener noreferrer">
                 <FaGithub />

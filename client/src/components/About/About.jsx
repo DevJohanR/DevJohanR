@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { FaReact } from 'react-icons/fa'; // Importamos el icono de React
 import SearchBar from '../SearchBar/SearchBar';
 import ProjectsSearch from '../ProjectsSearch/ProjectsSearch';
 import CodeBlock from '../CodeBlock/CodeBlock';
@@ -34,20 +35,43 @@ router.get('/', async (req, res) => {
 module.exports = router;
 `;
 
+const rotateIcon = (degree) => {
+  return {
+    transform: `rotate(\${degree}deg)`,
+    transition: 'transform 0.5s linear'
+  };
+};
+
+
 const About = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setRotation(prevRotation => (prevRotation + 360) % 360);
+    }, 5000); // Ajusta este tiempo para controlar la velocidad de la animación
+
+    return () => clearInterval(intervalId);
+  }, []);
+
 
   return (
-    <div className={styles.aboutContainer}>
-      <h1 className={styles.aboutTitle}>Explora Mis Proyectos Tecnológicos</h1>
+    <div id='tecnologias' className={styles.aboutContainer}>
+      <h1 className={styles.aboutTitle}>Filtra mis proyectos por tecnologías</h1>
       <SearchBar setSearchTerm={setSearchTerm} />
       <ProjectsSearch searchTerm={searchTerm} />
       <div className={styles.codeSection}>
         <div className={styles.textContainer}>
-      
-          <h3 className={styles.codeSubtitle}>Consumo Eficiente de API con Node.js y MySQL</h3>
+          <h3 className={styles.codeSubtitle}>
+            Consumo de APIs 
+            <span className={styles.reactIcon} style={rotateIcon(rotation)}>
+          <FaReact />
+        </span>
+
+          </h3>
           <p className={styles.codeDescription}>
-          En mi trabajo actual en Activos Digitales, utilizamos un enfoque basado en Node.js y MySQL para manejar y filtrar datos de manera eficiente, este fragmento de codigo corresponde a la logica que permite el filtrado de mis componentes en la seccion anterior.  el siguiente fragmento de código, que muestra cómo la implementacion realizada 
+            En mi trabajo actual en Activos Digitales, utilizamos un enfoque basado en Node.js y MySQL para manejar y filtrar datos de manera eficiente, este fragmento de código corresponde a la lógica que permite el filtrado de mis componentes en la sección anterior. El siguiente fragmento de código muestra cómo la implementación realizada.
           </p>
           <div className={styles.ctaButtons}>
             <button className={styles.ctaButton}>Ver Más Proyectos</button>

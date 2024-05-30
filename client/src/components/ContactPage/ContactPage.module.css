@@ -53,6 +53,10 @@
   color: #1a1a1a;
 }
 
+.infoItem span{
+  font-size: 15px
+}
+
 .icon {
   margin-right: 10px;
   color: #4497fb;

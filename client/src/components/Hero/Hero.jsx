@@ -1,10 +1,15 @@
 import React from 'react';
+import { FaMouse } from 'react-icons/fa';
 import styles from './Hero.module.css';
 import Projects from '../Projects/Projects';
 import skills from '../../assets/skills';
 import SkillIcon from '../Skill/Skill';
 
 const Hero = () => {
+  const handleScroll = () => {
+    window.scrollBy({ top: 200, behavior: 'smooth' }); // Ajusta el valor de `top` según la cantidad de desplazamiento deseado
+  };
+
   return (
     <div className={styles.heroContainer}>
       <div className={styles.heroFlexbox}>
@@ -12,7 +17,10 @@ const Hero = () => {
           <span className={styles.heroName}>Johan Riascos</span>
           <h1 className={styles.heroTitle}>Desarrollador Full Stack</h1>
           <p className={styles.heroDescription}>
-            Tecnólogo en análisis y desarrollo de software. Autodidacta, proactivo; me motiva el desarrollo personal, por lo que he desarrollado la capacidad de concentrarme y programar durante largas horas. Se me facilita expresarme, comunicando mis ideas de manera clara. Tengo experiencia en la implementación de soluciones web completas, desde el diseño hasta la integración de APIs, bases de datos e implementación de medidas de seguridad.
+            Con habilidades en <strong>React.js</strong>, <strong>Node.js</strong> y <strong>SQL</strong>, mi experiencia abarca desde el desarrollo de interfaces dinámicas hasta la arquitectura de soluciones de back-end completas. Poseo conocimientos prácticos en la <strong>integración y gestión de APIs</strong>, realización de <strong>despliegues eficientes</strong>, y <strong>administración de bases de datos</strong>, Priorizando la <strong>seguridad</strong>
+            <span className={styles.mouseIconContainer} onClick={handleScroll}>
+              <FaMouse className={styles.mouseIcon} />
+            </span>
           </p>
         </div>
         <div className={styles.skills}>

@@ -5,6 +5,7 @@ import Home from './components/Home/Home'; // Asegúrate de tener estos componen
 import About from './components/About/About';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
+import Alert from './components/Alert';
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
   return (
     <div>
       <Header />
-
+      <Alert />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

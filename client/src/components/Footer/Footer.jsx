@@ -1,10 +1,19 @@
+// src/components/Footer/Footer.jsx
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { showAlert } from '../../features/alertSlice';
 import styles from './Footer.module.css';
 import { FaDownload } from 'react-icons/fa';
-import { AiFillTwitterCircle } from 'react-icons/ai';
 import pdf from '../../assets/activosNorman.pdf';
 
 const Footer = () => {
+  const dispatch = useDispatch();
+
+  const handleAlertClick = (e) => {
+    e.preventDefault();
+    dispatch(showAlert());
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.topSection}>
@@ -15,35 +24,35 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.copyright}>
-            <p>© Copyright 2024. Todos los derechos reservados.</p>
+            <p>Por favor descarga mi hoja de vida, allí encontrarás mis certificaciones laborales y de estudio</p>
           </div>
         </div>
         <div className={styles.column}>
-          <h3>Titulo</h3>
+          <h3>Validaciones</h3>
           <ul>
-            <li>Inicio</li>
-            <li>Estudios</li>
-            <li>Experiencia</li>
-            <li>Descargar</li>
+            <li onClick={handleAlertClick}>Certificados</li>
+            <li onClick={handleAlertClick}>Estudios</li>
+            <li onClick={handleAlertClick}>Experiencia</li>
           </ul>
         </div>
         <div className={styles.column}>
-        <h3>Titulo</h3>
+          <h3>Proyectos</h3>
           <ul>
-          <li>Descripcion</li>
-            <li>Descripcion</li>
-            <li>Descripcion Pro<span className={styles.new}>Nuevo</span></li>
-            <li>Descripcion</li>
-            <li>Descripcion</li>
+            <li onClick={handleAlertClick}>Experimentos</li>
+            <li onClick={handleAlertClick}>Bootcamp</li>
+            <li onClick={handleAlertClick}>Desarrollando<span className={styles.new}>Nuevo</span></li>
           </ul>
         </div>
         <div className={styles.column}>
-          <h3>Titulo</h3>
+          <h3>Personal</h3>
           <ul>
-            <li>Descripcion</li>
-            <li>Descripcion</li>
-            <li>Descripcion</li>
+            <li onClick={handleAlertClick}>Pasatiempos</li>
+            <li onClick={handleAlertClick}>Intereses</li>
+            <li onClick={handleAlertClick}>Visión</li>
           </ul>
+        </div>
+        <div className={styles.copyright}>
+          <p>© Copyright 2024. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
