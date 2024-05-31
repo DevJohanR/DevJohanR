@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { showAlert } from '../../features/alertSlice';
 import styles from './Footer.module.css';
 import { FaDownload } from 'react-icons/fa';
-import pdf from '../../assets/JohanRiascosCV.pdf';
+import pdf from '../../assets/curriculumJohanRiascos7777.pdf';
 
 const Footer = () => {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const Footer = () => {
         <div className={styles.column}>
           <div className={styles.socialMedia}>
             <a href={pdf} download="curriculum.pdf" className={styles.downloadLink}>
-              Descargar Curriculum <FaDownload />
+              <span>Descargar Curriculum  </span> <span><FaDownload /></span>
             </a>
           </div>
           <div className={styles.copyright}>

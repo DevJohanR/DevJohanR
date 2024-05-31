@@ -157,3 +157,12 @@
   color: #61DAFB; /* Color oficial de React */
   position: relative; /* Asegura que la posición se mantenga */
 }
+
+
+
+@media (min-width:1367px){
+  .textContainer{
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -4,7 +4,8 @@ import SearchBar from '../SearchBar/SearchBar';
 import ProjectsSearch from '../ProjectsSearch/ProjectsSearch';
 import CodeBlock from '../CodeBlock/CodeBlock';
 import styles from './About.module.css';
-
+import { Link } from 'react-scroll';
+import pdf from '../../assets/curriculumJohanRiascos7777.pdf';
 const backendCode = `
 const express = require('express');
 const router = express.Router();
@@ -71,11 +72,21 @@ const About = () => {
 
           </h3>
           <p className={styles.codeDescription}>
-            En mi trabajo actual en Activos Digitales, utilizamos un enfoque basado en Node.js y MySQL para manejar y filtrar datos de manera eficiente, este fragmento de código corresponde a la lógica que permite el filtrado de mis componentes en la sección anterior. El siguiente fragmento de código muestra cómo la implementación realizada.
+          En mi trayectoria como desarrollador Full Stack, he adquirido una sólida experiencia en la creación y consumo de APIs, utilizando React para el frontend y Node.js para el backend. Esta combinación me permite construir aplicaciones web eficientes.
           </p>
+          <p className={styles.codeDescription}>
+  Implemento servidores con Express en Node.js que interactúan con bases de datos SQL, facilitando la búsqueda y filtrado dinámico. <strong>Por ejemplo, para la selección de proyectos, el siguiente código ilustra cómo consumo datos desde MySQL.</strong>
+</p>
+
           <div className={styles.ctaButtons}>
-            <button className={styles.ctaButton}>Ver Más Proyectos</button>
-            <button className={styles.ctaButton}>Contactarme</button>
+
+          <a href={pdf} download="curriculumJohanRiascos.pdf">
+          <button className={styles.ctaButton}>Descargar CV</button>
+            </a>
+
+            
+            <Link to="contacto" smooth={true} duration={500}><button className={styles.ctaButton}>¡Hablemos!</button></Link>
+            
           </div>
         </div>
         <div className={styles.codeContainerWrapper}>
