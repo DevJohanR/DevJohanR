@@ -1,6 +1,6 @@
-// frontend/src/components/ProjectsSearch/ProjectsSearch.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { FaGithub } from 'react-icons/fa'; // Importa el icono de GitHub
 import styles from './ProjectsSearch.module.css';
 
 const ProjectsSearch = ({ searchTerm }) => {
@@ -37,6 +37,17 @@ const ProjectsSearch = ({ searchTerm }) => {
           <p>Descripción: {project.descripcion}</p>
           <p>Cliente: {project.cliente}</p>
           <p>Tecnologías: {highlightMatch(project.tecnologias, searchTerm)}</p>
+          <p>
+            Página Web: 
+            <a href={project.webUrl} target="_blank" rel="noopener noreferrer">
+              {project.webUrl}
+            </a>
+          </p>
+          <p>
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+              <FaGithub size={24} /> {/* Tamaño del icono de GitHub */}
+            </a>
+          </p>
         </div>
       ))}
     </div>

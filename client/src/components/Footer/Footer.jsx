@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { showAlert } from '../../features/alertSlice';
 import styles from './Footer.module.css';
 import { FaDownload } from 'react-icons/fa';
-import pdf from '../../assets/activosNorman.pdf';
+import pdf from '../../assets/JohanRiascosCV.pdf';
 
 const Footer = () => {
   const dispatch = useDispatch();
