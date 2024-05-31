@@ -7,7 +7,8 @@ const pool = require('../../db');
 router.get('/', async (req, res) => {
   const searchTerm = req.query.search || '';
   const query = `
-    SELECT p.id, p.nombre, p.descripcion, c.nombre AS cliente, GROUP_CONCAT(t.nombre) AS tecnologias
+    SELECT p.id, p.nombre, p.descripcion, c.nombre AS cliente, 
+           p.webUrl, p.githubUrl, GROUP_CONCAT(t.nombre) AS tecnologias
     FROM projects p
     JOIN clients c ON p.client_id = c.id
     LEFT JOIN projects_technologies pt ON p.id = pt.project_id
