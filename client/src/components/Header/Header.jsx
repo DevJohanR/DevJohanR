@@ -36,35 +36,33 @@ const Header = () => {
             {isOpen ? <FaTimes /> : <FaBars />}
           </div>
           <div className={`${styles.menu} ${isOpen ? styles.menuOpen : ''}`}>
-            <Link to="/" onClick={toggleMenu}>Home</Link>
-            <Link to="tecnologias" onClick={toggleMenu}>Tecnologías</Link>
-            <Link to="contacto" onClick={toggleMenu}>Contacto</Link>
+            <Link to="/" onClick={toggleMenu} className={styles.link}>Inicio</Link>
+            <Link to="tecnologias" onClick={toggleMenu} className={styles.link}>Tecnologías</Link>
+            <Link to="contacto" onClick={toggleMenu} className={styles.link}>Contacto</Link>
             <div className={styles.socialIcons}>
-              <a href="https://github.com/tu-perfil" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/tu-perfil" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                 <FaLinkedin />
               </a>
-              
             </div>
           </div>
         </div>
       ) : (
         <div className={styles.desktopMenu}>
-          <div className={styles.logo}>
+          <div id='inicio' className={styles.logo}>
             <img src={Logo} width={100} alt="Logo" />
           </div>
           <div className={styles.links}>
-            <Link to="/">Inicio</Link>
-            <Link to="tecnologias" smooth={true} duration={500}>Tecnologías</Link>
-            <Link to="contacto" smooth={true} duration={500}>
-Contacto</Link>
+            <Link to="inicio" smooth={true} duration={500} className={styles.link}>Inicio</Link>
+            <Link to="tecnologias" smooth={true} duration={500} className={styles.link}>Tecnologías</Link>
+            <Link to="contacto" smooth={true} duration={500} className={styles.link}>Contacto</Link>
             <div className={styles.socialIcons}>
-              <a href="https://github.com/tu-perfil" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/DevJohanR" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/ejohan7777/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
                 <FaLinkedin />
               </a>
             </div>
