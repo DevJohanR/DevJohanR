@@ -1,7 +1,4 @@
-Mi nombre es Johan Manuel Riascos
-Siempre busco ser un gran compañero de equipo y...
-
-### 🛠️ Habilidades
+### 🚀 Me gusta ser un gran compañero de equipo y...
 
 - **Desarrollo Front-End:**  Manejo de eventos, asincronía,
 - **Desarrollo Back-End:** APIs REST, GraphQL
