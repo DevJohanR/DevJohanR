@@ -20,4 +20,11 @@
   - 📅 Scrum
   - 💻 VPS - Hostinger
 
-
+### 🎓 Formación:
+**Tecnologo en analisis y desarrollo de Sofware (SENA - Actualmente)**
+- Java
+- POO
+**Bootcamp de Desarrollo Full Stack en Henry**
+- React js
+- Node js
+- Sequelize
