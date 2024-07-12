@@ -6,3 +6,18 @@
 - Desarrollo de Software: (Análisis de requerimientos, diseño y testing automatizado)
 - Marketing Digital: (Meta Pixel, Google Tag Manager, Analytics)
 - Estrategias de Contenido: (Selección de contenido, estrategias de anuncios, análisis de métricas)
+
+### 💼 Actualmente estoy trabajando para:
+**[Activos Digitales SAS](https://activosdigitales.com.co)** 🔗
+
+- **Desarrollador Full Stack**
+
+  - 🖥️ Node Js / MongoDB / SQL
+  - 🌐 Nextjs / React js
+  - 📝 Wordpress / PHP / Laravel
+  - 📈 Google Ads / Meta Ads
+  - 🎨 Figma
+  - 📅 Scrum
+  - 💻 VPS - Hostinger
+
+
